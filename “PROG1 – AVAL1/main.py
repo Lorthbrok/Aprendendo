@@ -218,7 +218,9 @@ class Individual () :
                 combinacao.remove(c)
                 combinacao.append(reagrupar_string)
                 Individual.copia = combinacao.copy()
-        
+            else:
+                Individual.copia = combinacao.copy()
+
         if gambiarra == True :
             return print(f'Os possíveis genótipos resultantes do cruzamento entre {self.__nome} e {outro_individuo.__nome} são {combinacao}')
         else :
